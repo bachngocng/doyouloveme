@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You Must Love Me</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="https://wallpaperaccess.com/full/126971.jpg">
+</form>
+<h1 style="position: absolute;left: 600px; top: 200px;color: white">Do you love me?</h1>
+<button onclick="yes()" style="position: absolute;left: 600px;top: 300px" > Yes </button>
+<button onmouseover="moveAway()" id="demo" style="position: absolute;left: 800px;top: 300px"> No </button>
+<script>
+    function yes() {
+        alert("Love you 3000 <3");
+    }
+    function moveAway () {
+        let x = document.getElementById("demo");
+        x.style.left = Math.random()*innerWidth + 'px'
+        x.style.top = Math.random()*innerHeight + 'px'
+    }
+</script>
+</body>
+</html>
